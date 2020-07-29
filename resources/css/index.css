@@ -797,7 +797,7 @@ header nav #hamburger-close {
     text-align: center;
 }
 
-#contact-board form input[type=submit] {
+#contact-board form #mail {
     font-weight: 200;
     font-size: 3rem;
     width: 70%;
@@ -809,9 +809,13 @@ header nav #hamburger-close {
     transition: all 0.3s;
     border: 2px solid var(--color-highlight);
     margin: 30px 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#contact-board form input[type=submit]:hover {
+#contact-board form #mail:hover {
     background-color: var(--color-highlight);
     color: var(--color-primary);
 }
