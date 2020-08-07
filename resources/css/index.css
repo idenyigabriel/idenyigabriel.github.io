@@ -53,20 +53,19 @@ html::-webkit-scrollbar-thumb:hover {
 body {
     font-size: 10px;
     position: relative;
-    padding-top: 8vh;
     background-color: var(--color-primary);
     color: var(--color-secondary-gray);
     overflow-x: hidden;
 }
 
 header {
-    height: 8vh;
+    height: 60px;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 2%; 
     z-index: 9999999999999999;
@@ -74,15 +73,25 @@ header {
     color: var(--color-secondary-gray);
 }
 
-header span {
-    border-radius: 50%;
-    height: 6.5vh;
-    width: 6.5vh;
-    color: #fff;
-    line-height: 6.5vh;
-    text-align: center;
-    font-weight: bold;
-    overflow: hidden;
+header > h1 {
+    font-size: 2rem;
+    font-family: 'pacifico';
+    font-weight: 200;
+}
+
+header h1 i {
+    font-size: 3rem;
+}
+
+header #top-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 140px;
+    z-index: -1;
+    background-color: #FF0066;
+    clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
 }
 
 header nav #hamburger-open {
@@ -97,215 +106,157 @@ header nav #hamburger-close {
     display: none;
 }
 
-
-/* INTRO */
-#intro {
-    height: 92vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    padding: 0px 20px 0px 50px;
-    background: url(../images/coding.svg);
-    background-size: 600px 600px;
-    background-repeat: no-repeat;
-    background-position: bottom 0px right 0px;
-}
-
-#intro #intro-text {
-    display: flex;
-    min-height: 20vh;
-    width: 100vw;
-    font-size: 2rem;
-}
-
-#intro #intro-text  #color-box{
-    width: auto;
-    padding: 20px 40px;
-    background-color: var(--color-secondary-gray);
-    color: var(--color-primary);
-    font-size: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: switch 2s infinite;
-}
-
-@keyframes switch {
-    0% {
-        background: var(--color-secondary-gray);
-        color: var(--color-primary);
-    }
-    50% {
-        color: var(--color-secondary-gray);
-        background: var(--color-primary);
-    }
-}
-
-#intro #intro-text #name-text {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-secondary-gray);
-    margin-left: 30px;
-    margin-top: -30px;
-}
-
-#intro #intro-text #name-text #name{
-    font-size: 7.5em;
-    letter-spacing: 10px;
-    margin-right: auto;
-}
-
-#intro #intro-text #name-text #job{
-    font-size: 0.9em;
-    letter-spacing:5px;
-    font-weight: 200;
-    margin: -40px auto 0px 20px;
-}
-
-#intro #quote {
-    margin: 50px auto;
-    font-size: 2.5rem;
-    color: var(--color-secondary-gray);
-    font-family: "pacifico";
-    letter-spacing: 5px;
-    max-width: 800px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-#intro #quote:before {
-    content: "\201c";
-    color: var(--color-highlight);
-    font-size: 4rem;
-}
-
-#intro #quote p{
-    font-family: "poppins";
-    letter-spacing: 5px;
-    max-width: 800px;
-    text-align: left;
-    margin-left: 30px;
-    text-transform: uppercase;
-}
-
-/* INTRO MEDIA QUERIES */
-@media only screen and (max-width:1400px){
-    #intro #intro-text {
+@media only screen and (max-width:800px) {
+    header > h1{
         font-size: 1.5rem;
     }
 
-    #intro #intro-text #color-box {
-        padding: 0px 50px;
+    header > h1 i {
+        font-size: 2.5rem;
     }
 
-    #intro #intro-text #name-text #job {
-        margin: -20px auto 0px 20px;
-    }
-}
-
-@media only screen and (max-width:1150px){
-    #intro #intro-text {
-        font-size: 1.3rem;
-    }
-
-    #intro #intro-text #name-text #job {
-        font-size: 1.5em;
+    header #top-svg {
+        width: 100px;
     }
 }
 
-@media only screen and (max-width:1000px){
-    #intro {
-        background: none;
-        padding: 0px 20px 0px 20px;
+
+
+
+
+/* INTRO */
+#intro {
+    height: 100vh;
+    padding-top: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#intro #intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 85%;
+    font-size: 2rem;
+    background: linear-gradient(to bottom, 
+                #0005, #0002, #0000, #fff0)
+}
+
+#intro #intro-wrapper #name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro #intro-wrapper #name h2{
+    font-size: 14rem;
+    letter-spacing: 20px;
+    margin: 0px;
+    padding: 0;
+    animation: typing 2s;
+}
+
+#intro #intro-wrapper #name h3{
+    font-size: 2rem;
+    margin-top: -40px;
+    letter-spacing: 10px;
+}
+
+#intro #intro-wrapper #social-icons{
+    display: flex;
+    margin: 15px 0px;
+}
+
+#intro #intro-wrapper #social-icons a{
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    transition: all 0.4s;
+    color: var(--color-secondary-gray);
+    display: inline-block;
+}
+
+#intro #intro-wrapper #social-icons a i{
+    font-size: 5rem;
+    margin: 0px 5px;
+    transition: all 1s;
+}
+
+#intro #intro-wrapper #social-icons a i:hover{
+    color: var(--color-highlight);
+    transform: scale(1.2);
+}
+
+/* INTRO MEDIA QUERIES */
+@media only screen and (max-width:1230px){
+    #intro #intro-wrapper #name h2 {
+        font-size: 12rem;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    #intro #intro-wrapper #name h2 {
+        font-size: 8rem;
     }
 
-    #intro #intro-text {
-        font-size: 1rem;
-    }
-
-    #intro #intro-text #name-text #job {
-        font-size: 1.5em;
+    #intro #intro-wrapper #name h3 {
+        margin-top: -30px;
     }
 }
 
 @media only screen and (max-width:800px){
-    #intro #intro-text {
-        font-size: 0.8rem;
+    #intro #intro-wrapper #name h2 {
+        font-size: 6rem;
     }
 
-    #intro #intro-text #color-box {
-        padding: 0px 30px;
-    }
-
-    #intro #intro-text #name-text #job {
-        font-size: 1.5em;
-    }
-
-    #intro #quote {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    #intro #quote p {
-        font-size: 0.9em;
+    #intro #intro-wrapper #name h3 {
+        font-size: 1.8rem;
+        margin-top: -20px;
     }
 }
 
-@media only screen and (max-width:640px){
-    #intro #intro-text {
-        font-size: 0.6rem;
+@media only screen and (max-width:680px){
+    #intro #intro-wrapper #name h2 {
+        font-size: 5rem;
+        letter-spacing: 10px;
     }
 
-    #intro #intro-text #name-text #job {
-        margin: -10px auto 0px 0px;
-        font-size: 1.7em;
+    #intro #intro-wrapper #name h3 {
+        font-size: 1.6rem;
+        margin-top: -10px;
+        letter-spacing: 5px;
     }
-    #intro #quote {
-        font-size: 2rem;
-        line-height: 30px;
+
+    #intro #intro-wrapper #social-icons i {
+        font-size: 4rem;
     }
 }
 
-@media only screen and (max-width:570px){
-    #intro #intro-text {
-        font-size: 0.4rem;
+@media only screen and (max-width:500px){
+    #intro #intro-wrapper #name h2 {
+        font-size: 4rem;
+        letter-spacing: 5px;
     }
 
-    #intro #intro-text #color-box {
-        padding: 0px 30px;
-    }
-
-    #intro #intro-text #name-text #job {
-        margin: 0px auto 0px 5px;
-        font-size: 3em;
-    }
-
-    #intro #quote p {
-        font-size: 0.7em;
-        margin-left: 10px;
-        margin-top: 5px;
+    #intro #intro-wrapper #name h3 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
     }
 }
 
-@media only screen and (max-width:450px){
-    #intro #intro-text {
-        font-size: 0.3rem;
+@media only screen and (max-width:370px){
+    #intro #intro-wrapper #name h3 {
+        margin-top: 1px;
     }
 
-    #intro #intro-text #color-box {
-        padding: 0px 30px;
-    }
-}
-
-@media only screen and (max-width:400px){
-    #intro #intro-text {
-        font-size: 0.25rem;
+    #intro #intro-wrapper #social-icons i {
+        font-size: 3rem;
     }
 }
 /* END MEDIA QUERY */
@@ -317,7 +268,7 @@ header nav #hamburger-close {
 /* NAV */
 #nav-wrapper {
     position: absolute;
-    top: 8vh;
+    top: 60px;
     left: 0;
     width: 100vw;
     height: auto;
@@ -389,9 +340,9 @@ header nav #hamburger-close {
 }
 
 #landing #about #text > p#greeting {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: left;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-top: -0px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -435,9 +386,9 @@ header nav #hamburger-close {
 }
 
 #landing #about #skills > p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: left;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-top: -0px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -507,7 +458,7 @@ header nav #hamburger-close {
 
 
 /* MEDIA QUERIES LANDING */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:850px) {
     #landing {
         padding: 30px 10px;
     }
@@ -808,7 +759,7 @@ header nav #hamburger-close {
     font-weight: 700;
     transition: all 0.3s;
     border: 2px solid var(--color-highlight);
-    margin: 30px 0px;
+    margin: 20px 0px 5px 0px;;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -832,24 +783,18 @@ header nav #hamburger-close {
     width: auto;
     height: auto;
     transition: all 0.4s;
+    color: var(--color-secondary-gray);
 }
-
 
 #contact-board #contact-icons a i {
-    padding: 10px;
-    background-color: var(--color-highlight);
-    color: var(--color-secondary-white);
-    margin: 10px;
-    font-size: 3rem;
-    transition: all 0.4s;
-}
-
-#contact-board #contact-icons a:hover {
-    transform: scale(1.2);
+    font-size: 5rem;
+    margin: 0px 5px;
+    transition: all 0.5s;
 }
 
 #contact-board #contact-icons a:hover i {
-    color: var(--color-primary);
+    color: var(--color-highlight);
+    transform: scale(1.2) rotateZ(10deg);
 }
 
 
