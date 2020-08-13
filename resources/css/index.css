@@ -77,6 +77,8 @@ header > h1 {
     font-size: 2rem;
     font-family: 'pacifico';
     font-weight: 200;
+    color: #fff;
+    visibility: hidden;
 }
 
 header h1 i {
@@ -90,8 +92,9 @@ header #top-svg {
     height: 100%;
     width: 140px;
     z-index: -1;
-    background-color: #FF0066;
-    clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+    background-color: var(--color-highlight);
+    /* background-color: #FF0066; */
+    clip-path: polygon(0 0, 100% 0, 20% 100%, 0% 100%);
 }
 
 header nav #hamburger-open {
@@ -143,8 +146,6 @@ header nav #hamburger-close {
     height: 85%;
     width: 85%;
     font-size: 2rem;
-    background: linear-gradient(to bottom, 
-                #0005, #0002, #0000, #fff0)
 }
 
 #intro #intro-wrapper #name {
@@ -222,6 +223,17 @@ header nav #hamburger-close {
 }
 
 @media only screen and (max-width:680px){
+    #intro {
+        height: auto;
+        padding: 150px 0px 0px 0px;
+    }
+
+    #intro #intro-wrapper {
+        height: 100%;
+        width: 90%;
+        background: transparent;
+    }
+
     #intro #intro-wrapper #name h2 {
         font-size: 5rem;
         letter-spacing: 10px;
@@ -234,7 +246,7 @@ header nav #hamburger-close {
     }
 
     #intro #intro-wrapper #social-icons i {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
@@ -248,6 +260,10 @@ header nav #hamburger-close {
         font-size: 1.3rem;
         letter-spacing: 2px;
     }
+
+    #intro #intro-wrapper #social-icons i {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width:370px){
@@ -256,7 +272,7 @@ header nav #hamburger-close {
     }
 
     #intro #intro-wrapper #social-icons i {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 }
 /* END MEDIA QUERY */
@@ -342,7 +358,7 @@ header nav #hamburger-close {
 #landing #about #text > p#greeting {
     font-size: 1.8rem;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin-top: -0px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -388,7 +404,7 @@ header nav #hamburger-close {
 #landing #about #skills > p {
     font-size: 1.8rem;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin-top: -0px;
     margin-bottom: 20px;
     font-weight: bold;
