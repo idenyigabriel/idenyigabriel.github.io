@@ -1,0 +1,97 @@
+@keyframes icon-one {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.2);
+    }
+
+    35% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes icon-two {
+    0% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+}
+
+
+
+@keyframes icon-three {
+    0% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    55% {
+        transform: scale(1);
+    }
+}
+
+
+
+@keyframes icon-four {
+    0% {
+        transform: scale(1);
+    }
+
+    55% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
+    65% {
+        transform: scale(1);
+    }
+}
+
+
+
+@keyframes icon-five {
+    0% {
+        transform: scale(1);
+    }
+
+    65% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+}
+
