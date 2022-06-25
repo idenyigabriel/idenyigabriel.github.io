@@ -635,6 +635,10 @@ header > span {
     cursor: default;
 }
 
+#portfolio .project:hover *:not(a) {
+    cursor: default;
+}
+
 #portfolio .project .project-heading {
     display: flex;
     justify-content: space-between;
