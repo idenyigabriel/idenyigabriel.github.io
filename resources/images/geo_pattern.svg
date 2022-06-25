@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1150px" height="500px" viewBox="0 0 1150 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6BBB4B" offset="0%"></stop>
+            <stop stop-color="#A4DF82" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="25.2217061%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFD974" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#C916AB" fill-rule="nonzero" opacity="0.1" cx="321" cy="464" r="9"></circle>
+        <circle id="Oval" fill="#C916AB" fill-rule="nonzero" opacity="0.2" cx="1066" cy="68" r="9"></circle>
+        <path d="M1127,265 L1133,265 C1135.20914,265 1137,266.790861 1137,269 C1137,271.209139 1135.20914,273 1133,273 L1127,273 L1127,279 C1127,281.209139 1125.20914,283 1123,283 C1120.79086,283 1119,281.209139 1119,279 L1119,273 L1113,273 C1110.79086,273 1109,271.209139 1109,269 C1109,266.790861 1110.79086,265 1113,265 L1119,265 L1119,259 C1119,256.790861 1120.79086,255 1123,255 C1125.20914,255 1127,256.790861 1127,259 L1127,265 Z" id="Path" fill="#B6E3FF" fill-rule="nonzero" opacity="0.2"></path>
+        <path d="M325,62 L331,62 C333.209139,62 335,63.790861 335,66 C335,68.209139 333.209139,70 331,70 L325,70 L325,76 C325,78.209139 323.209139,80 321,80 C318.790861,80 317,78.209139 317,76 L317,70 L311,70 C308.790861,70 307,68.209139 307,66 C307,63.790861 308.790861,62 311,62 L317,62 L317,56 C317,53.790861 318.790861,52 321,52 C323.209139,52 325,53.790861 325,56 L325,62 Z" id="Path" fill="#B6E3FF" fill-rule="nonzero" opacity="0.4"></path>
+        <path d="M885.931978,38.7656274 C864.621318,19.0781242 843.310659,19.0781242 822,38.7656274" id="Path-2" stroke="#3499DF" stroke-width="11" opacity="0.2" stroke-linecap="round" transform="translate(853.965989, 31.382814) rotate(205.000000) translate(-853.965989, -31.382814) "></path>
+        <path d="M84.9319775,75.7656274 C63.6213184,56.0781242 42.3106592,56.0781242 21,75.7656274" id="Path-2" stroke="#FFD974" stroke-width="11" opacity="0.2" stroke-linecap="round" transform="translate(52.965989, 68.382814) rotate(147.000000) translate(-52.965989, -68.382814) "></path>
+        <path d="M782.931978,471.765627 C761.621318,452.078124 740.310659,452.078124 719,471.765627" id="Path-2" stroke="#B6E3FF" stroke-width="11" opacity="0.2" stroke-linecap="round" transform="translate(750.965989, 464.382814) rotate(167.000000) translate(-750.965989, -464.382814) "></path>
+        <path d="M74,391 L80,391 C82.209139,391 84,392.790861 84,395 C84,397.209139 82.209139,399 80,399 L74,399 L74,405 C74,407.209139 72.209139,409 70,409 C67.790861,409 66,407.209139 66,405 L66,399 L60,399 C57.790861,399 56,397.209139 56,395 C56,392.790861 57.790861,391 60,391 L66,391 L66,385 C66,382.790861 67.790861,381 70,381 C72.209139,381 74,382.790861 74,385 L74,391 Z" id="Path" fill="#FFD974" fill-rule="nonzero" opacity="0.2"></path>
+        <path d="M183,210 L183,322 L123,322 L123,210 L93,210 L153,135 L213,210 L183,210 Z" id="Triangle-2" fill="url(#linearGradient-1)" opacity="0.16"></path>
+        <path d="M1036,353 L1036,500 L957,500 L957,353 L918,353 L996.5,255 L1075,353 L1036,353 Z" id="Triangle-2" fill="url(#linearGradient-2)" opacity="0.2"></path>
+    </g>
+</svg>
