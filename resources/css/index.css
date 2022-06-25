@@ -632,6 +632,7 @@ header > span {
 
 #portfolio .project:hover {
     border: 1px solid var(--theme-color);
+    cursor: default;
 }
 
 #portfolio .project .project-heading {
