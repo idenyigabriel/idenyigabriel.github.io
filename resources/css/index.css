@@ -650,7 +650,7 @@ header > span {
     align-items: center;
 }
 
-#portfolio .project .project-heading span:first-child  a {
+#portfolio .project .project-heading span:first-child  i {
     font-size: 30px;
     text-decoration: none;
     color: var(--theme-color);
