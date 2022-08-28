@@ -97,8 +97,8 @@ header > a {
     font-weight: bold;
     color: var(--theme-color);
     text-decoration: none;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     padding-top: 5px;
     border-radius: 50%;
     display: flex;
